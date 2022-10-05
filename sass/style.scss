@@ -1,0 +1,28 @@
+/*!
+Theme Name: 31w - JulieDeRen - Underscore
+Theme URI: http://underscores.me/
+Author: Deschenes-Renaud, Julie
+Author URI: https://github.com/JulieDeRen/31w/
+Description: thème de base de wp
+Version: 1.0.0
+Text Domain: _31w
+Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-comments, translation-ready
+
+*/
+
+/* Importation des variables */
+@import "variables/colors";
+@import "variables/typography";
+
+/* Importation des fichiers de base */
+@import "base/elements/body";
+@import "base/elements/buttons";
+@import "base/elements/fields";
+
+/* Importation des fichiers de base de typo */
+@import "base/typography/copy";
+@import "base/typography/headings";
+
+/* Importation des éléments génériques */
+@import "generic/box-sizing";
+@import "generic/normalize";
