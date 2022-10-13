@@ -1,10 +1,12 @@
 ul,
 ol {
 	margin: 0 0 1.5em 3em;
+	padding-inline-start: 0px;
 }
 
 ul {
 	list-style: disc;
+	padding-inline-start: 0px;
 }
 
 ol {
@@ -14,7 +16,7 @@ ol {
 li > ul,
 li > ol {
 	margin-bottom: 0;
-	margin-left: 1.5em;
+	margin-left: 0;
 }
 
 dt {

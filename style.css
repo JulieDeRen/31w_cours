@@ -93,6 +93,10 @@ textarea {
 }
 
 /* Importation des fichiers de base de typo */
+body {
+  width: 100%;
+}
+
 p {
   margin-bottom: 1.5em;
 }
@@ -152,7 +156,10 @@ h1 {
 h2,
 h3,
 h4,
-h5,
+h5 {
+  font-size: clamp(3rem, 3vw, 6rem);
+}
+
 h6 {
   clear: trebuchet;
 }
