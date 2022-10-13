@@ -28,14 +28,13 @@ get_header();
 				$heure_cours = substr($titre,strrpos($titre,'('));
 				$titre = substr($titre,8);
 				$longueur = strlen($titre);
-
-				//$titre = substr($titre, strrpos($titre,'(') - strlen($titre));
 				$titre = substr($titre, 0, strrpos($titre,'(') - strlen($titre));
 				?>
 			<header>
                 <h1><?= $titre  ?></h1>
-                <code>Cours <?=$code_cours?></code>
-                <code><?=$heure_cours?></code>
+                <code>Code du cours : <?=$code_cours?></code>
+				<br>
+                <code>Nombre d'heures : <?=$heure_cours?></code>
             </header>
 
 			<?php the_content();
