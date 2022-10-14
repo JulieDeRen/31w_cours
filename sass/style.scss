@@ -10,19 +10,22 @@ Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-com
 
 */
 
-/* Importation des variables */
+/* 1- Variables - Importation des variables */
 @import "variables/colors";
 @import "variables/typography";
+
+/* 2- Générique - Importation des éléments normalise */
+@import "generic/box-sizing";
+@import "generic/normalize";
+
 
 /* Importation des fichiers de base */
 @import "base/elements/body";
 @import "base/elements/buttons";
 @import "base/elements/fields";
+@import "base/elements/lists";
 
 /* Importation des fichiers de base de typo */
 @import "base/typography/copy";
 @import "base/typography/headings";
 
-/* Importation des éléments normalise */
-@import "generic/box-sizing";
-@import "generic/normalize";
