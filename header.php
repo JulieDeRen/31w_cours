@@ -53,3 +53,6 @@
 			<?php endif; ?>
 		</div><!-- .site-branding -->
 	</header><!-- #masthead -->
+	<aside class="site__sidebar">
+		<h2></h2>
+	</aside>
