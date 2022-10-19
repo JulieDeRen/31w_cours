@@ -470,7 +470,7 @@ pre {
   background: #eee;
   font-family: "Courier 10 Pitch", courier, monospace;
   line-height: 1.6;
-  margin-bottom: 1.6em;
+  margin-bottom: 1.5em;
   max-width: 100%;
   overflow: auto;
   padding: 0em;
@@ -500,18 +500,35 @@ big {
 }
 
 h1 {
-  font-size: clamp(2rem, 3vw, 5rem);
+  font-size: clamp(1.5rem, 5vw, 6rem);
+}
+
+h2 {
+  font-size: clamp(0.9rem, 4vw, 4rem);
+}
+
+h3 {
+  font-size: clamp(0.9rem, 3vw, 3rem);
+}
+
+h4 {
+  font-size: clamp(0.8rem, 3vw, 3rem);
+}
+
+h5 {
+  font-size: clamp(0.7rem, 3vw, 2rem);
+}
+
+h6 {
+  font-size: clamp(0.7rem, 3vw, 2rem);
 }
 
 h2,
 h3,
 h4,
-h5 {
-  font-size: clamp(3rem, 3vw, 6rem);
-}
-
+h5,
 h6 {
-  clear: trebuchet;
+  font-family: trebuchet;
 }
 
 h1 {
