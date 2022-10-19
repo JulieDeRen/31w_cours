@@ -28,7 +28,9 @@
 	<header id="masthead" class="site__header"> <!--modifié site-header standard BEM -->
 		
 		<?php
-			wp_nav_menu(()=>{})
+			wp_nav_menu(array(
+				"menu" => "En-tete"
+			));
 		?>
 		<div class="site__branding"><!--modifié site-branding standard BEM-->
 			<?php
