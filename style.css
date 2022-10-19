@@ -551,4 +551,30 @@ h1 {
 
 .menu-item {
   text-decoration: none;
+}
+
+/* Layout */
+.site {
+  display: grid;
+  grid-template-columns: 20% auto;
+  grid-template-areas: "header header" "sidebar main" "footer footer";
+}
+
+.site__header {
+  grid-area: header;
+  background-color: grey;
+}
+
+.site__main {
+  grid-area: main;
+  overflow: hidden; /* Resolves issue with <pre> elements forcing full width. */
+}
+
+.site__sidebar { /* widget-area */
+  grid-area: sidebar;
+  background-color: aqua;
+}
+
+.site__footer {
+  grid-area: footer;
 }/*# sourceMappingURL=style.css.map */

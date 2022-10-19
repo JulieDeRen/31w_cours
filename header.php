@@ -54,5 +54,5 @@
 		</div><!-- .site-branding -->
 	</header><!-- #masthead -->
 	<aside class="site__sidebar">
-		<h2></h2>
+		<h2>Menu sidebar</h2>
 	</aside>

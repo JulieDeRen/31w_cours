@@ -9,6 +9,7 @@
 
 .site__header {
 	grid-area: header;
+	background-color: grey;
 }
 
 .site__main {
@@ -18,6 +19,7 @@
 
 .site__sidebar { /* widget-area */
 	grid-area: sidebar;
+	background-color: aqua;
 }
 
 .site__footer {
