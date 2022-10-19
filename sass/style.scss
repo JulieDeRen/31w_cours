@@ -13,6 +13,7 @@ Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-com
 /* 1- Variables - Importation des variables */
 @import "variables/colors";
 @import "variables/typography";
+@import "variables/structure";
 
 /* 2- Générique - Importation des éléments normalise */
 @import "generic/box-sizing";
@@ -31,4 +32,7 @@ Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-com
 
 /* Compostants */
 @import "composants/nav_primaire";
+
+/* Layout */
+@import "layout/sidebar-content";
 
