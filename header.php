@@ -26,6 +26,10 @@
 	<a class="skip-link screen-reader-text" href="#primary"><?php esc_html_e( 'Skip to content', 'igc31w' ); ?></a>
 
 	<header id="masthead" class="site__header"> <!--modifié site-header standard BEM -->
+		
+		<?php
+			wp_nav_menu(()=>{})
+		?>
 		<div class="site__branding"><!--modifié site-branding standard BEM-->
 			<?php
 			the_custom_logo();
