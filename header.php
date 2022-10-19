@@ -29,7 +29,9 @@
 		
 		<?php
 			wp_nav_menu(array(
-				"menu" => "En-tete"
+				"menu" => "Primaire",
+				"container" => "nav",
+				"container_class" => "menu__primaire",
 			));
 		?>
 		<div class="site__branding"><!--modifié site-branding standard BEM-->

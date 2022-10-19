@@ -51,7 +51,7 @@ function igc31w_setup() { // le préfixe a changé (passé de under à igc31w)
 	// This theme uses wp_nav_menu() in one location.
 	register_nav_menus(
 		array(
-			'menu-primaire' => esc_html__( 'En-tete', 'igc31w' ),
+			'menu-primaire' => esc_html__( 'Primaire', 'igc31w' ),
 			'menu-pied-page' => esc_html__( 'Pied-de-page', 'igc31w' ),
 		)
 	);
