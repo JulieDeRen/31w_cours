@@ -535,4 +535,20 @@ h1 {
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
 }
 
-/* Compostants *//*# sourceMappingURL=style.css.map */
+/* Compostants */
+.menu__primaire {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.menu__primaire .menu {
+  display: flex;
+  justify-content: space-around;
+  list-style-type: none;
+  margin-left: 12%;
+  gap: 1.5rem;
+}
+
+.menu-item {
+  text-decoration: none;
+}/*# sourceMappingURL=style.css.map */
