@@ -581,8 +581,15 @@ h1 {
 /* Layout */
 .site {
   display: grid;
-  grid-template-columns: 20% auto;
-  grid-template-areas: "header header" "sidebar main" "footer footer";
+  grid-template-columns: auto;
+  grid-template-areas: "header" "sidebar" "main" "footer";
+}
+@media screen and (min-width: 700px) {
+  .site {
+    display: grid;
+    grid-template-columns: 20% auto;
+    grid-template-areas: "header header" "sidebar main" "footer footer";
+  }
 }
 
 .site__header {
@@ -597,7 +604,7 @@ h1 {
 
 .site__sidebar { /* widget-area */
   grid-area: sidebar;
-  background-color: aqua;
+  background-color: rgb(216, 216, 216);
 }
 
 .site__footer {
