@@ -197,3 +197,26 @@ if ( defined( 'JETPACK__VERSION' ) ) {
 	require get_template_directory() . '/inc/jetpack.php';
 }
 */
+
+function igc31w_filtre_choix_menu($obj_menu, $arg){
+    //echo "/////////////////  obj_menu";
+    // var_dump($obj_menu);
+    //  echo "/////////////////  arg";
+    //  var_dump($arg);
+ 
+    if ($arg->menu == "aside"){
+    foreach($obj_menu as $cle => $value)
+    {
+	  // couper à partir du caractère 7
+       $value->title = substr($value->title,7);
+	   // Ref: https://stackoverflow.com/questions/2588666/remove-portion-of-a-string-after-a-certain-character
+	   $value->title = substr($value->title, 0, strpos($value->title, "("));
+	   // filtrer les 3 premier mots donc simplifie 
+       // $value->title = wp_trim_words($value->title,3,"...");
+        //echo $value->title . '<br>';
+     } 
+    }
+    //die();
+    return $obj_menu;
+}
+add_filter("wp_nav_menu_objects","igc31w_filtre_choix_menu", 10,2);
