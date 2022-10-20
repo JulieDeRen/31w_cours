@@ -104,6 +104,7 @@ function igc31w_setup() {
 		)
 	);
 }
+// exemple de hook (un événement) qui est un écouteur d'événement : ici après initialisation du thème apparition de la fonction du setup
 add_action( 'after_setup_theme', 'igc31w_setup' );
 
 /**
@@ -164,6 +165,7 @@ function igc31w_scripts() {
 	}
 	*/
 }
+// hook dans le header
 add_action( 'wp_enqueue_scripts', 'igc31w_scripts' );
 
 /**
