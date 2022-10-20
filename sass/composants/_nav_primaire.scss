@@ -9,6 +9,10 @@
     margin-left: 12%;
     gap: 1.5rem;
 }
-.menu-item{
+
+.menu__primaire .menu-item{
+    background-color: grey;
+}
+.menu__primaire .menu-item a{
     text-decoration: none;
 }

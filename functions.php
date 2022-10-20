@@ -1,10 +1,10 @@
 <?php
 /**
- * Underscore functions and definitions
+ * igc31w functions and definitions
  *
  * @link https://developer.wordpress.org/themes/basics/theme-functions/
  *
- * @package Underscore
+ * @package igc31w
  */
 
 if ( ! defined( '_S_VERSION' ) ) {
@@ -19,16 +19,17 @@ if ( ! defined( '_S_VERSION' ) ) {
  * runs before the init hook. The init hook is too late for some features, such
  * as indicating support for post thumbnails.
  */
-function igc31w_setup() { // le préfixe a changé (passé de under à igc31w)
+function igc31w_setup() {
 	/*
 		* Make theme available for translation.
 		* Translations can be filed in the /languages/ directory.
-		* If you're building a theme based on Underscore, use a find and replace
+		* If you're building a theme based on underscore, use a find and replace
 		* to change 'igc31w' to the name of your theme in all the template files.
 		*/
-	// load_theme_textdomain( 'igc31w', get_template_directory() . '/languages' ); pas de langage pour l'instant
+	// load_theme_textdomain( 'igc31w', get_template_directory() . '/languages' );
 
 	// Add default posts and comments RSS feed links to head.
+	
 	// add_theme_support( 'automatic-feed-links' );
 
 	/*
@@ -37,7 +38,6 @@ function igc31w_setup() { // le préfixe a changé (passé de under à igc31w)
 		* hard-coded <title> tag in the document head, and expect WordPress to
 		* provide it for us.
 		*/
-	// permet de générer la balise title avec le nom du site
 	add_theme_support( 'title-tag' );
 
 	/*
@@ -45,22 +45,22 @@ function igc31w_setup() { // le préfixe a changé (passé de under à igc31w)
 		*
 		* @link https://developer.wordpress.org/themes/functionality/featured-images-post-thumbnails/
 		*/
-	// A intégrer lorsqu'on voudra ajouter des images
 	// add_theme_support( 'post-thumbnails' );
 
 	// This theme uses wp_nav_menu() in one location.
+
 	register_nav_menus(
 		array(
-			'menu-primaire' => esc_html__( 'Primaire', 'igc31w' ),
-			'menu-pied-page' => esc_html__( 'Footer', 'igc31w' ),
+			'principal' => esc_html__( 'Principal', 'igc31w' ),
+			'footer' =>esc_html__( 'Footer', 'igc31w' ),
 		)
 	);
+	
 
 	/*
 		* Switch default core markup for search form, comment form, and comments
 		* to output valid HTML5.
 		*/
-	// Enlever les propriété suivante 'comment-form', 'comment-list',
 	add_theme_support(
 		'html5',
 		array(
@@ -73,7 +73,7 @@ function igc31w_setup() { // le préfixe a changé (passé de under à igc31w)
 	);
 
 	// Set up the WordPress core custom background feature.
-	/* On va le voir éventuellement
+	/*
 	add_theme_support(
 		'custom-background',
 		apply_filters(
@@ -104,8 +104,7 @@ function igc31w_setup() { // le préfixe a changé (passé de under à igc31w)
 		)
 	);
 }
-// c'est comme un addEventListener de javascript 'after_setup_theme' c,est ce qu'on appelle un hook
-add_action( 'after_setup_theme', 'igc31w_setup' ); 
+add_action( 'after_setup_theme', 'igc31w_setup' );
 
 /**
  * Set the content width in pixels, based on the theme's design and stylesheet.
@@ -124,7 +123,8 @@ add_action( 'after_setup_theme', 'igc31w_content_width', 0 );
  *
  * @link https://developer.wordpress.org/themes/functionality/sidebars/#registering-a-sidebar
  */
-/* Commenter pour l'instant 
+
+ /*
 function igc31w_widgets_init() {
 	register_sidebar(
 		array(
@@ -145,18 +145,20 @@ add_action( 'widgets_init', 'igc31w_widgets_init' );
  * Enqueue scripts and styles.
  */
 function igc31w_scripts() {
-	// enqueue_style ajoute la balise link du style au fichier html
-	// ancienne version : wp_enqueue_style( 'igc31w-style', get_stylesheet_uri(), array(), _S_VERSION );
-	wp_enqueue_style('main-styles', 
-					get_template_directory_uri() . '/style.css', 
-					array(), 
-					filemtime(get_template_directory() . '/style.css'), 
-					false);
+	//wp_enqueue_style( 'igc31w-style', get_stylesheet_uri(), array(), _S_VERSION );
+
+	wp_enqueue_style('main-styles',
+					get_template_directory_uri() . '/style.css',
+					array(),
+					filemtime(get_template_directory() . '/style.css'),
+					 false);
+
+
 	wp_style_add_data( 'igc31w-style', 'rtl', 'replace' );
 
-	/* Si c'est true c'est à la fin et si c'est false c'est dans la partie head
-	wp_enqueue_script( 'igc31w-navigation', get_template_directory_uri() . '/js/navigation.js', array(), _S_VERSION, true );
-
+	// wp_enqueue_script( 'igc31w-navigation', get_template_directory_uri() . '/js/navigation.js', array(), _S_VERSION, true );
+	
+	/*
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
 	}
@@ -187,9 +189,9 @@ add_action( 'wp_enqueue_scripts', 'igc31w_scripts' );
 /**
  * Load Jetpack compatibility file.
  */
-/*
+
+ /*
 if ( defined( 'JETPACK__VERSION' ) ) {
 	require get_template_directory() . '/inc/jetpack.php';
 }
-
-
+*/

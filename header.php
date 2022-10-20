@@ -22,19 +22,18 @@
 
 <body <?php body_class(); ?>>
 <?php wp_body_open(); ?>
-<div id="page" class="site"><!--site va permettre d'adapter tout l'aspect puisque ça sera créé en grid -->
+<div id="page" class="site">
 	<a class="skip-link screen-reader-text" href="#primary"><?php esc_html_e( 'Skip to content', 'igc31w' ); ?></a>
-
-	<header id="masthead" class="site__header"> <!--modifié site-header standard BEM -->
-		
-		<?php
-			wp_nav_menu(array(
-				"menu" => "Primaire",
-				"container" => "nav",
-				"container_class" => "menu__primaire",
-			));
-		?>
-		<div class="site__branding"><!--modifié site-branding standard BEM-->
+ 
+	<header id="masthead" class="site__header">
+	<?php 
+		wp_nav_menu(array(
+			"menu" => "primaire",
+			"container"=> "nav",
+			"container_class"=> "menu__primaire",
+		))
+	?>
+		<div class="site__branding">
 			<?php
 			the_custom_logo();
 			if ( is_front_page() && is_home() ) :
@@ -54,5 +53,6 @@
 		</div><!-- .site-branding -->
 	</header><!-- #masthead -->
 	<aside class="site__sidebar">
-		<h2>Menu sidebar</h2>
+	<h2>Menu sidebar</h2>
+
 	</aside>
