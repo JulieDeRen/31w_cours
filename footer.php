@@ -6,17 +6,20 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-files/#template-partials
  *
- * @package Underscore
+ * @package underscore
  */
 
 ?>
 
-	<footer class="site__footer">
-		<h2>Pied de page du 31w</h2>
-	</footer>
+	<footer class="site__footer">	
+		<?php get_sidebar( 'footer-1' ); ?>
+		<?php get_sidebar( 'footer-2' ); ?>
+		<?php get_sidebar( 'footer-3' ); ?>
+		<?php get_sidebar( 'footer-4' ); ?>
+    </footer><!-- #colophon -->
 </div><!-- #page -->
 
-<?php wp_footer(); ?><!--générer javascript-->
+<?php wp_footer(); ?>
 
 </body>
 </html>
