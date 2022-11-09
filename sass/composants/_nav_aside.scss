@@ -22,10 +22,8 @@
 
 }
 
-
-
 .menu__aside{ // nav
-background-color: black;
+background-color: silver;
 
 	display: flex;
     flex-direction: column;
@@ -52,12 +50,13 @@ background-color: black;
 }
 
 .menu__aside .menu-item{ // li
+    padding-top: 20px;
 }
 
 .menu__aside .menu-item a{
     text-decoration: none;
-    padding : 3px 4px;
-    color : #fff;
+    padding : 4px;
+    color : black;
 }
 
 

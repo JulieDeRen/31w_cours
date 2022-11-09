@@ -27,6 +27,7 @@
 .site__main {
 	grid-area: main;
 	overflow: hidden; /* Resolves issue with <pre> elements forcing full width. */
+	padding: 20px;
 }
 
 .site__sidebar { /* widget-area */
