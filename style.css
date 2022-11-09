@@ -566,11 +566,13 @@ h1 {
   top: 30px;
   transform: translateX(-100vw);
   width: 100vw;
+  transform: 0.5s;
 }
 @media screen and (min-width: 700px) {
   .menu__aside {
     position: static;
     width: 100%;
+    transform: translateX(0);
   }
 }
 
@@ -586,6 +588,7 @@ h1 {
 .menu__aside .menu-item a {
   text-decoration: none;
   padding: 3px 4px;
+  color: white;
 }
 
 .chkBurger:checked ~ .emoji {
@@ -613,6 +616,7 @@ h1 {
 
 .chkBurger:checked ~ .emoji {
   transform: rotate(90deg);
+  transform: translateX(-100vw);
 }
 
 /* Layout */

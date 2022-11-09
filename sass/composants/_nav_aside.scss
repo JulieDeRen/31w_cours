@@ -7,10 +7,13 @@
     top: 30px;
     transform: translateX(-100vw);
     width: 100vw;
+    transform: 0.5s;
+
 
     @media screen and(min-width: 700px){
         position: static;
         width: 100%;
+        transform: translateX(0);
     }
 }
 .menu__aside .menu{ // ul
@@ -29,6 +32,7 @@
 .menu__aside .menu-item a{
     text-decoration: none;
     padding: 3px 4px;
+    color: #ffff;
 }
 
 .chkBurger:checked~ .emoji{
@@ -55,7 +59,9 @@
 
 .chkBurger:checked~ .emoji{
     transform: rotate(90deg);
+    transform: translateX(-100vw);
 }
+
 
 
 
