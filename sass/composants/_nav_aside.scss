@@ -1,10 +1,19 @@
-.menu__aside{
+.menu__aside{ // nav
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
+    position: absolute;
+    top: 30px;
+    transform: translateX(-100vw);
+    width: 100vw;
+
+    @media screen and(min-width: 700px){
+        position: static;
+        width: 100%;
+    }
 }
-.menu__aside .menu{
+.menu__aside .menu{ // ul
     display: flex;
     flex-direction: column;
     list-style-type: none;
@@ -13,7 +22,41 @@
     gap: 1.5rem;
 }
 
+.menu__aside .menu-itme{ // li
+
+}
+
 .menu__aside .menu-item a{
     text-decoration: none;
     padding: 3px 4px;
 }
+
+.chkBurger:checked~ .emoji{
+    transform: rotate(90deg);
+}
+
+.emoji{
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: rotate(0);
+    transition: transform 0.5s;
+    font-size: 2rem;
+    width: 1rem;
+    height: 1rem;
+}
+.site__sitebar{
+    position: relative;
+}
+
+.chkBurger{
+    display: none;
+}
+
+.chkBurger:checked~ .emoji{
+    transform: rotate(90deg);
+}
+
+
+
+

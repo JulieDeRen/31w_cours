@@ -562,6 +562,16 @@ h1 {
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
+  position: absolute;
+  top: 30px;
+  transform: translateX(-100vw);
+  width: 100vw;
+}
+@media screen and (min-width: 700px) {
+  .menu__aside {
+    position: static;
+    width: 100%;
+  }
 }
 
 .menu__aside .menu {
@@ -576,6 +586,33 @@ h1 {
 .menu__aside .menu-item a {
   text-decoration: none;
   padding: 3px 4px;
+}
+
+.chkBurger:checked ~ .emoji {
+  transform: rotate(90deg);
+}
+
+.emoji {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: rotate(0);
+  transition: transform 0.5s;
+  font-size: 2rem;
+  width: 1rem;
+  height: 1rem;
+}
+
+.site__sitebar {
+  position: relative;
+}
+
+.chkBurger {
+  display: none;
+}
+
+.chkBurger:checked ~ .emoji {
+  transform: rotate(90deg);
 }
 
 /* Layout */
