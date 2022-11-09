@@ -52,10 +52,10 @@
 			<?php endif; ?>
 		</div><!-- .site-branding -->
 	</header><!-- #masthead -->
-	<aside class="site__sidebar">
-	<input type = "checkbox" id="chkBurger" class="chkBurger">
+	<aside class="site__menu">
+	<input type="checkbox" id="chkBurger" class="chkBurger">
 	<label for="chkBurger" class="burger">
-		<code>&#127828</code>
+		<code>&#10148;</code>
 	</label>
 	<?php 
 		wp_nav_menu(array(
@@ -64,4 +64,9 @@
 			"container_class"=> "menu__aside",
 		))
 	?>
+	</aside>
+	<aside class="site__sidebar">
+			<h6>Calendrier</h6>
+			<?php get_sidebar( 'aside-1' ); ?>
+			<?php get_sidebar( 'aside-2' ); ?>
 	</aside>
