@@ -10,7 +10,8 @@ Text Domain: _31w
 Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-comments, translation-ready
 
 */
-/* 1- Variables - Importation des variables */
+/* 1- Variables - Importation des variables */ /* ------------------------------------------------- Lien standard */
+/* ------------------------------------------------- Lien menu aside */
 /* 2- Générique - Importation des éléments normalise */
 /* Inherit box-sizing to more easily change it's value on a component level.
 @link http://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/ */
