@@ -1,67 +1,64 @@
+.chkBurger {
+    display : none;
+}
+
+.chkBurger:checked ~ .burger {
+    transform : rotate(90deg);
+}
+
+.chkBurger:checked ~ .menu__aside {
+    transform: translateX(0);
+}
+
+.burger{
+    position : absolute;
+    top :0;
+    left:0;
+    transform : rotate(0);
+    transition: transform 0.5s;
+    font-size: 1rem;
+    width: 1rem;
+    height: 1rem;
+
+}
+
+
+
 .menu__aside{ // nav
-    display: flex;
+background-color: black;
+
+	display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
-    position: absolute;
-    top: 30px;
+
+    position : absolute;
+    top:30px;
     transform: translateX(-100vw);
+    transition: transform 0.5s;
     width: 100vw;
-    transform: 0.5s;
-
-
-    @media screen and(min-width: 700px){
-        position: static;
-        width: 100%;
+    @media screen and (min-width: 700px){
+        position : static;
+        width: 100%;  
         transform: translateX(0);
     }
+
+
 }
 .menu__aside .menu{ // ul
-    display: flex;
-    flex-direction: column;
     list-style-type: none;
     margin: 0 0 0 1rem;
     padding: 0;
-    gap: 1.5rem;
 }
 
-.menu__aside .menu-itme{ // li
-
+.menu__aside .menu-item{ // li
 }
 
 .menu__aside .menu-item a{
     text-decoration: none;
-    padding: 3px 4px;
-    color: #ffff;
+    padding : 3px 4px;
+    color : #fff;
 }
-
-.chkBurger:checked~ .emoji{
-    transform: rotate(90deg);
-}
-
-.emoji{
-    position: absolute;
-    top: 0;
-    left: 0;
-    transform: rotate(0);
-    transition: transform 0.5s;
-    font-size: 2rem;
-    width: 1rem;
-    height: 1rem;
-}
-.site__sitebar{
-    position: relative;
-}
-
-.chkBurger{
-    display: none;
-}
-
-.chkBurger:checked~ .emoji{
-    transform: rotate(90deg);
-    transform: translateX(-100vw);
-}
-
 
 
 
