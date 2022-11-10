@@ -608,7 +608,7 @@ h1 {
 }
 
 .menu__aside .menu-item {
-  padding-top: 20px;
+  padding: 1.5rem 1.5rem 1.5rem 0;
 }
 
 .menu__aside .menu-item a {
@@ -633,20 +633,23 @@ h1 {
 .site__header {
   grid-area: header;
   background-color: grey;
+  padding: 2rem 1.5rem;
 }
 
 .site__main {
   grid-area: main;
   overflow: hidden; /* Resolves issue with <pre> elements forcing full width. */
-  padding: 20px;
+  padding: 1.5rem;
 }
 
 .site__sidebar { /* widget-area */
   grid-area: sidebar;
   background-color: rgb(216, 216, 216);
+  padding: 1.5rem;
 }
 
 .site__footer {
   grid-area: footer;
   background-color: greenyellow;
+  padding: 0 1.5rem 2rem 1.5rem;
 }/*# sourceMappingURL=style.css.map */
