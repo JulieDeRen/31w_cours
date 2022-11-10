@@ -17,7 +17,7 @@ get_header();
 ?>
 <h1>front-page.php</h1>
 	<main class="site__main">
-		<code>front-page.php</code>
+		<!--<code>front-page.php</code>-->
 
 		<?php
 		if ( have_posts() ) :
