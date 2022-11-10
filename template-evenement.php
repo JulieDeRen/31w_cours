@@ -11,8 +11,8 @@
      <?php if (have_posts()): while(have_posts()): the_post(); ?>
      <?php the_title() ?>
      <?php the_content() ?>
-     <?php the_field('adresse') ?>
-     <?php the_field('date_de_levenement') ?>
+     <p><?php the_field('adresse') ?></p>
+     <p><?php the_field('date_et_heure_de_levenement') ?></p>
      <?php endwhile ?>
      <?php endif ?>
 </main>
