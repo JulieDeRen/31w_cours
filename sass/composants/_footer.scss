@@ -1,0 +1,11 @@
+.footer__centre{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.footer__centre div {
+    width: 50%;
+}
+.footer__centre .sidebar{
+    width: 100%
+}
