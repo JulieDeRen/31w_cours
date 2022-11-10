@@ -31,7 +31,7 @@ get_header();
 				$titre = substr($titre, 0, strrpos($titre,'(') - strlen($titre));
 				?>
 			<header>
-                <h1><?= $titre  ?></h1>
+                <h3><?= $titre  ?></h3>
                 <code>Sigle du cours : <?php the_field('sigle_du_cours')?></code>
 				<br>
                 <code>Durée du cours : <?php the_field('duree_du_cours')?></code>
@@ -44,12 +44,12 @@ get_header();
 			?>
 			
 			<blockquote><?php // the_excerpt(); ?></blockquote> <!--Affiche résumé-->
-			<blockquote><?= wp_trim_words(get_the_excerpt(),5, $le_permalien); ?></blockquote>
+			<blockquote><?= wp_trim_words(get_the_excerpt(),20, $le_permalien); ?></blockquote>
 			
-			<pre><?php the_category(); ?></pre>
-			<pre><?php the_date(); ?></pre>
-			<pre><?php the_permalink();  ?></pre>
-			<pre><?php the_author(); ?></pre>
+			<!--<pre><?php //the_category(); ?></pre>
+			<pre><?php //the_date(); ?></pre>
+			<pre><?php //the_permalink();  ?></pre>
+			<pre><?php //the_author(); ?></pre>-->
 
 <?php
 			endwhile;
