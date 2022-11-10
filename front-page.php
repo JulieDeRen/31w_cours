@@ -15,7 +15,7 @@
 get_header();
 
 ?>
-<!--<h1>front-page.php</h1>-->
+<h1>front-page.php</h1>
 	<main class="site__main">
 		<code>front-page.php</code>
 
