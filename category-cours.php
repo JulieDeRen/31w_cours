@@ -41,7 +41,7 @@ get_header();
 			$le_permalien = "<a href='" . get_the_permalink() . "'>Suite</a>";
 			?>
 			
-			<blockquote><?php the_excerpt(); ?></blockquote>
+			<blockquote><?php the_excerpt(); ?></blockquote> <!--Affiche résumé-->
 			<blockquote><?= wp_trim_words(get_the_excerpt(),5, $le_permalien); ?></blockquote>
 			
 			<pre><?php the_category(); ?></pre>
