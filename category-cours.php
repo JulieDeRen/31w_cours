@@ -32,16 +32,18 @@ get_header();
 				?>
 			<header>
                 <h1><?= $titre  ?></h1>
-                <code>Code du cours : <?=$code_cours?></code>
+                <code>Sigle du cours : <?php the_field('sigle_du_cours')?></code>
 				<br>
-                <code>Nombre d'heures : <?=$heure_cours?></code>
+                <code>Durée du cours : <?php the_field('duree_du_cours')?></code>
+				<br>
+                <code>Type de cours : <?php the_field('type_de_cours')?></code>
             </header>
 
 			<?php //the_content(); //The content affiche galerie d'image
 			$le_permalien = "<a href='" . get_the_permalink() . "'>Suite</a>";
 			?>
 			
-			<blockquote><?php the_excerpt(); ?></blockquote> <!--Affiche résumé-->
+			<blockquote><?php // the_excerpt(); ?></blockquote> <!--Affiche résumé-->
 			<blockquote><?= wp_trim_words(get_the_excerpt(),5, $le_permalien); ?></blockquote>
 			
 			<pre><?php the_category(); ?></pre>
