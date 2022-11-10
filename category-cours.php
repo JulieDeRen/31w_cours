@@ -37,7 +37,7 @@ get_header();
                 <code>Nombre d'heures : <?=$heure_cours?></code>
             </header>
 
-			<?php the_content();
+			<?php //the_content(); //The content affiche galerie d'image
 			$le_permalien = "<a href='" . get_the_permalink() . "'>Suite</a>";
 			?>
 			
