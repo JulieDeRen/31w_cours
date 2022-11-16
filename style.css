@@ -618,6 +618,25 @@ h1 {
   color: black;
 }
 
+/* ul */
+.menu_evenement .menu {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  list-style-type: none;
+}
+
+/* li */
+.menu_evenement .menu-item {
+  flex: 0 1 200px;
+  border: 1px solid black;
+}
+
+/* a */
+.menu_evenement .menu-item a {
+  text-decoration: none;
+}
+
 .footer__centre {
   display: flex;
   justify-content: space-between;
