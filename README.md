@@ -4,5 +4,5 @@
 ### Un plugin sera également développé. 
 ### Le plugin consistera en la création d'un carrousel.
 
-Professeur : Eddy Martin, EddyTuto, referenced.ca, eddypmartin@outlook.fr
-Étudiante : Julie Renaud, 2295160, github.com/JulieDeRen, julie.deschenes-renaud@hec.ca
+#### Professeur : Eddy Martin, EddyTuto, referenced.ca, eddypmartin@outlook.fr
+#### Étudiante : Julie Renaud, 2295160, github.com/JulieDeRen, julie.deschenes-renaud@hec.ca
