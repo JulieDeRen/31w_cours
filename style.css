@@ -537,6 +537,16 @@ h1 {
 }
 
 /* Compostants */
+.grille {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.gille_article {
+  flex: 0 1 250px;
+}
+
 .menu__primaire {
   display: flex;
   justify-content: flex-end;

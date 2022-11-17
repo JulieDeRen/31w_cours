@@ -27,6 +27,12 @@ get_header();
 			'container_class' => 'menu_evenement'
 		));
 
+		?>
+		<section class="grille">
+
+		
+<?php
+
 		if ( have_posts() ) :
 			/* Start the Loop */
 			while ( have_posts() ) :
@@ -44,6 +50,7 @@ get_header();
 			endwhile;
 			endif;	
 		?>
+			</section>
 	</main><!-- #main -->
 <?php
 get_footer();

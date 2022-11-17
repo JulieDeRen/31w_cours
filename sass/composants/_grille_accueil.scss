@@ -1,2 +1,8 @@
-.grille_accueil{}
-.accueil_article{}
+.grille{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.gille_article{
+    flex : 0 1 250px
+}
