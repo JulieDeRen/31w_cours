@@ -38,7 +38,7 @@ get_header();
 			?>
 			
 			<blockquote><?php the_excerpt(); ?></blockquote>
-			<blockquote><?= wp_trim_words(get_the_excerpt(),5, $le_permalien); ?></blockquote>
+			<blockquote><?= wp_trim_words(get_the_excerpt(),25, $le_permalien); ?></blockquote>
 
 <?php
 			endwhile;

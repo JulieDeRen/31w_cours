@@ -624,17 +624,34 @@ h1 {
   justify-content: space-around;
   flex-wrap: wrap;
   list-style-type: none;
+  margin: 0;
 }
 
 /* li */
 .menu_evenement .menu-item {
   flex: 0 1 200px;
   border: 1px solid black;
+  padding: 20px;
 }
 
 /* a */
 .menu_evenement .menu-item a {
   text-decoration: none;
+}
+
+.evenement__stage {
+  background-color: greenyellow;
+  border-radius: 8px;
+}
+
+.evenement__projet {
+  background-color: yellow;
+  border-radius: 8px;
+}
+
+.evenement__porte {
+  background-color: rgb(0, 225, 255);
+  border-radius: 8px;
 }
 
 .footer__centre {
