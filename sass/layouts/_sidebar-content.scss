@@ -21,7 +21,7 @@
 
 .site__header {
 	grid-area: header;
-	background-color: grey;
+	background-color: rgb(153, 253, 86);
 	padding: 2rem 1.5rem;
 }
 
@@ -29,17 +29,18 @@
 	grid-area: main;
 	overflow: hidden; /* Resolves issue with <pre> elements forcing full width. */
 	padding: 1.5rem;
+	background-color: rgb(229, 248, 252);
 }
 
 .site__sidebar { /* widget-area */
 	grid-area: sidebar;
-	background-color: rgb(216, 216, 216);
+	background-color: rgb(108, 238, 255);
 	padding: 1.5rem;
 }
 
 .site__footer {
 	grid-area: footer;
-	background-color: greenyellow;
+	background-color: rgb(239, 255, 58);
 	padding: 0 1.5rem 2rem 1.5rem;
 }
 
