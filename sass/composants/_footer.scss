@@ -1,10 +1,11 @@
-.footer__centre{
+.site__footer{
+    padding-top: 20px;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
 }
 .footer__centre div {
-    width: 50%;
+    width: 70%;
 }
 .footer__centre .sidebar{
     width: 100%

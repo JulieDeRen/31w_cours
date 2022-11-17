@@ -15,7 +15,7 @@
 get_header();
 
 ?>
-<h1>front-page.php</h1>
+<!--<h1>front-page.php</h1>-->
 	<main class="site__main">
 		<!--<code>front-page.php</code>-->
 
@@ -37,6 +37,7 @@ get_header();
 			/* Start the Loop */
 			while ( have_posts() ) :
 				the_post(); ?>
+				
 			<h1><?= get_the_title(); ?></h1>
 
 			<?php the_content();
@@ -45,7 +46,13 @@ get_header();
 			
 			<blockquote><?php the_excerpt(); ?></blockquote>
 			<blockquote><?= wp_trim_words(get_the_excerpt(),25, $le_permalien); ?></blockquote>
-
+			<article class="grille_article">
+					<?php
+					if (is_category('galerie')){
+						echo "Galerie";
+					}
+					?>
+				</article>
 <?php
 			endwhile;
 			endif;	
