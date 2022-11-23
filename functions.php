@@ -307,6 +307,7 @@ function my_register_sidebars() {
  * @param  string $item_output la chaîne qui contient le choix de menu à traiter et qui sera retourner par la fonction
  * @param object $item l'élément de menu à traiter
  */
+// ajout d'une description
 function prefix_nav_description( $item_output, $item) {
     // si l'option description est non vide 
     if ( !empty( $item->description ) ) {
@@ -322,6 +323,7 @@ function prefix_nav_description( $item_output, $item) {
     }
     return $item_output;
 }
+
 add_filter( 'walker_nav_menu_start_el', 'prefix_nav_description', 10, 2 );
 
 
