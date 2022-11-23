@@ -17,6 +17,6 @@
 }
 
 .grille__article h6,
-.grille__article p{
+.grille__article p:nth-last-of-type(1){
     margin: 0;
 }
