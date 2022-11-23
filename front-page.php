@@ -58,7 +58,7 @@ get_header();
 			endif;	
 		?>
 			</section>
-	</main><!-- #main -->
+	</main>
 <?php
 get_footer();
 
