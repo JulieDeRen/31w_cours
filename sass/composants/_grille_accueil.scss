@@ -1,0 +1,22 @@
+.grille{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.gille__article{
+    flex : 0 1 250px;
+    text-align: center;
+    display: flex;
+    flex-direction:column;
+    justify-content: space-between;
+    text-align: center;
+    margin: 5px;
+    padding: 10px;
+    background-color: white;
+    border-radius: 5px;
+}
+
+.grille__article h6,
+.grille__article p:nth-last-of-type(1){
+    margin: 0;
+}
