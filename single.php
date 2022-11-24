@@ -23,9 +23,12 @@ get_header();
 			/* Start the Loop */
 				the_post(); ?>
 			<h1><?= get_the_title(); ?></h1>
+			<p>L'événement aura lieu au :  <?php the_field('adresse') ?></p>
+     		<p>La date et l'heure de l'énénement :  <?php the_field('date_et_heure_de_levenement') ?></p>
 			<?php the_content();		
 			endif;	
 		?>
+
 	</main><!-- #main -->
 <?php
 get_footer();

@@ -417,7 +417,7 @@ textarea {
 
 ul,
 ol {
-  margin: 0 0 1.5em 3em;
+  margin: 0 0 0 3em;
   padding-inline-start: 1.5em;
 }
 
@@ -441,6 +441,10 @@ dt {
 
 dd {
   margin: 0 1.5em 1.5em;
+}
+
+li {
+  align-items: center;
 }
 
 /* Importation des fichiers de base de typo */
@@ -684,7 +688,24 @@ h1 {
 .site__header {
   grid-area: header;
   background-color: grey;
-  padding: 2rem 1.5rem;
+  padding: 0 1.5rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.site__header li {
+  display: flex;
+  align-items: center;
+}
+
+.site__title a {
+  text-decoration: none;
+  color: black;
+  font-size: 3rem;
+  background-color: white;
+  padding: 5px;
+  border-radius: 5px;
 }
 
 .site__main {
