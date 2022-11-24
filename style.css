@@ -541,14 +541,37 @@ h1 {
 }
 
 /* Compostants */
+.grille {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.grille__article {
+  flex: 0 1 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: left;
+  padding: 10px;
+  background-color: white;
+  border-radius: 5px;
+}
+
+.grille__article h6,
+.grille__article p:nth-last-of-type(1) {
+  margin: 0;
+}
+
 .menu__primaire {
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-between;
+  flex-direction: flex-end;
 }
 
 .menu__primaire .menu {
   display: flex;
-  justify-content: space-around;
   list-style-type: none;
   margin-left: 12%;
   gap: 1.5rem;
@@ -560,6 +583,7 @@ h1 {
 
 .menu__primaire .menu-item a {
   text-decoration: none;
+  padding-left: 2rem;
 }
 
 .chkBurger {
@@ -622,6 +646,7 @@ h1 {
   color: black;
 }
 
+/* nav */
 /* ul */
 .menu_evenement .menu {
   display: flex;
@@ -643,19 +668,34 @@ h1 {
   text-decoration: none;
 }
 
+.menu-item-icone {
+  width: 32px;
+  height: 32px;
+  background-repeat: no-repeat;
+}
+
 .evenement__stage {
   background-color: greenyellow;
   border-radius: 8px;
+}
+.evenement__stage .menu-item-icone {
+  background-image: url("https://s2.svgbox.net/hero-solid.svg?ic=chip");
 }
 
 .evenement__projet {
   background-color: yellow;
   border-radius: 8px;
 }
+.evenement__projet .menu-item-icone {
+  background-image: url("https://s2.svgbox.net/hero-solid.svg?ic=chip");
+}
 
 .evenement__porte {
   background-color: rgb(0, 225, 255);
   border-radius: 8px;
+}
+.evenement__porte .menu-item-icone {
+  background-image: url("https://s2.svgbox.net/hero-solid.svg?ic=chip");
 }
 
 .footer__centre {

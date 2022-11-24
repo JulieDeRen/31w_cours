@@ -2,15 +2,14 @@
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    gap: 2rem;
 }
-.gille__article{
+.grille__article{
     flex : 0 1 250px;
-    text-align: center;
     display: flex;
     flex-direction:column;
     justify-content: space-between;
-    text-align: center;
-    margin: 5px;
+    text-align: left;
     padding: 10px;
     background-color: white;
     border-radius: 5px;

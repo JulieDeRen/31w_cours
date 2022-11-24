@@ -25,24 +25,26 @@ get_header();
 			'container' => 'nav',
 			'container_class' => 'menu_evenement'
 		));
-		
-?>
-	<section class="grille">
-<?php
-	if ( have_posts() ) :
-		/* Start the Loop */
-		while ( have_posts() ) : the_post(); ?>
-		<?php if (in_category('galerie')): ?>
-			<?php get_template_part( 'template-parts/accueil-galerie', '' ); ?>
-			<?php else: ?>
-			<?php get_template_part( 'template-parts/accueil-cours', '' ); ?>
+        ?>
+        <h1><?= get_the_title(); ?></h1>
+        <?php
+		if ( have_posts() ) :
+			/* Start the Loop */
+			while ( have_posts() ) :
+				the_post(); ?>
+			<h1><?= get_the_title(); ?></h1>
 
-		<?php endif; ?>
+			<?php the_content();
+			$le_permalien = "<a href='" . get_the_permalink() . "'>Suite</a>";
+			?>
+			
+			<blockquote><?php the_excerpt(); ?></blockquote>
+			<blockquote><?= wp_trim_words(get_the_excerpt(),25, $le_permalien); ?></blockquote>
+
 		<?php
-		endwhile;
-	endif;	
-	?>
-	</section>
+			endwhile;
+			endif;	
+		?>
 	</main>
 <?php
 get_footer();

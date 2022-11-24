@@ -334,7 +334,7 @@ add_filter( 'walker_nav_menu_start_el', 'prefix_nav_description', 10, 2 );
  * @param WP_query  $query la requête principal de WP
  */
 function igc31w_modifie_requete_principal( $query ) {
-	if ( $query->is_home() && $query->is_main_query() && ! is_admin() ) {
+	if ( $query->is_home() && $query->is_main_query() && !is_admin() ) {
 	$query->set( 'category_name', 'accueil' );
 	}
 	}
