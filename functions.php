@@ -45,7 +45,8 @@ function igc31w_setup() {
 		*
 		* @link https://developer.wordpress.org/themes/functionality/featured-images-post-thumbnails/
 		*/
-	// add_theme_support( 'post-thumbnails' );
+	// ajout d'images
+	add_theme_support( 'post-thumbnails' );
 
 	// This theme uses wp_nav_menu() in one location.
 
@@ -339,3 +340,5 @@ function igc31w_modifie_requete_principal( $query ) {
 	}
 	}
 	add_action( 'pre_get_posts', 'igc31w_modifie_requete_principal' );
+
+

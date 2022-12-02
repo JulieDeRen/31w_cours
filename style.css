@@ -578,7 +578,7 @@ h1 {
 }
 
 .menu__primaire .menu-item {
-  background-color: grey;
+  background-color: none;
 }
 
 .menu__primaire .menu-item a {
@@ -727,11 +727,15 @@ h1 {
 
 .site__header {
   grid-area: header;
-  background-color: grey;
-  padding: 0 1.5rem;
+  background-image: url("https://amymhaddad.s3.amazonaws.com/morocco-blue.png");
+  height: 100vh;
+  width: 100%;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  position: sticky;
+  top: 0;
+  z-index: 0;
 }
 
 .site__header li {
@@ -752,16 +756,20 @@ h1 {
   grid-area: main;
   overflow: hidden; /* Resolves issue with <pre> elements forcing full width. */
   padding: 1.5rem;
+  background-color: white;
+  z-index: 1;
 }
 
 .site__sidebar { /* widget-area */
   grid-area: sidebar;
   background-color: rgb(216, 216, 216);
   padding: 1.5rem;
+  z-index: 1;
 }
 
 .site__footer {
   grid-area: footer;
   background-color: greenyellow;
   padding: 0 1.5rem 2rem 1.5rem;
+  z-index: 1;
 }/*# sourceMappingURL=style.css.map */

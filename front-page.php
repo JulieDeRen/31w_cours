@@ -27,6 +27,7 @@ get_header();
 		));
 		
 ?>
+
 	<section class="grille">
 <?php
 	if ( have_posts() ) :
