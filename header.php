@@ -18,6 +18,12 @@
 	<link rel="profile" href="https://gmpg.org/xfn/11">
 
 	<?php wp_head(); ?>
+	<style>
+		.site__header{
+			background-color:<?= get_theme_mod("site__title__background"); ?>;
+		}
+
+	</style>
 	<?php
 	if ( has_post_thumbnail() ) :
 		$thumbnail = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'twentyseventeen-featured-image' );

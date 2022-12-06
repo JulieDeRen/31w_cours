@@ -12,7 +12,7 @@
 
 <article class="grille__article">
     <a href="<?php the_permalink(); ?>" class="bloc__permalien">
-    <?php the_post_thumbnail("medium");?>
+    <?php the_post_thumbnail("carte");?>
     <h6><?=  $titre;  ?></h6>
     <p><?= wp_trim_words(get_the_excerpt(), 20,$le_permalien) ; ?></p>
     <p>Type de cours:<?php the_field("type_de_cours") ?></p>

@@ -12,6 +12,8 @@ if ( ! defined( '_S_VERSION' ) ) {
 	define( '_S_VERSION', '1.0.0' );
 }
 
+require_once("options/apparence.php");
+
 /**
  * Sets up theme defaults and registers support for various WordPress features.
  *
@@ -49,6 +51,7 @@ function igc31w_setup() {
 	// ajout d'images
 	add_theme_support( 'post-thumbnails' );
 	add_image_size('miniature', 50, 50);
+	add_image_size('carte', 280, 200);
 
 	// This theme uses wp_nav_menu() in one location.
 
@@ -75,8 +78,8 @@ function igc31w_setup() {
 		)
 	);
 
-	// Set up the WordPress core custom background feature.
-	/*
+	// Set up the WordPress core custom background feature. ***** Ajouté
+	
 	add_theme_support(
 		'custom-background',
 		apply_filters(
@@ -87,10 +90,10 @@ function igc31w_setup() {
 			)
 		)
 	);
-	*/
+	
 
-	// Add theme support for selective refresh for widgets.
-	// add_theme_support( 'customize-selective-refresh-widgets' );
+	// Add theme support for selective refresh for widgets. ***** Ajouté
+	add_theme_support( 'customize-selective-refresh-widgets' );
 
 	/**
 	 * Add support for core custom logo.

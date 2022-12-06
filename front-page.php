@@ -46,9 +46,19 @@ get_header();
 		while ( have_posts() ) : the_post(); ?>
 		<?php if (in_category('galerie')): ?>
 			<?php get_template_part( 'template-parts/accueil-galerie', '' ); ?>
-			<?php else: ?>
-			<?php get_template_part( 'template-parts/accueil-cours', '' ); ?>
 
+		<?php endif; ?>
+		<?php
+		endwhile;
+	?>
+	</section>
+	<section class="grille-grid">
+
+<?php
+		/* Start the Loop */
+		while ( have_posts() ) : the_post(); ?>
+		<?php if (!in_category('galerie')): ?>
+			<?php get_template_part( 'template-parts/accueil-cours', '' ); ?>
 		<?php endif; ?>
 		<?php
 		endwhile;

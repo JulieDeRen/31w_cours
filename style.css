@@ -545,11 +545,10 @@ h1 {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  gap: 2rem;
+  gap: 20px;
 }
 
 .grille__article {
-  flex: 0 1 250px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -562,6 +561,20 @@ h1 {
 .grille__article h6,
 .grille__article p:nth-last-of-type(1) {
   margin: 0;
+}
+
+.grille-grid {
+  margin-top: 2rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 1rem;
+  max-width: 100%;
+}
+
+.grille-grid img {
+  object-fit: cover;
+  width: 100%;
+  height: 200px;
 }
 
 .menu__primaire {
