@@ -39,6 +39,7 @@ function igc31w_setup() {
 		* provide it for us.
 		*/
 	add_theme_support( 'title-tag' );
+	add_theme_support( 'admin-bar' );
 
 	/*
 		* Enable support for Post Thumbnails on posts and pages.
@@ -47,6 +48,7 @@ function igc31w_setup() {
 		*/
 	// ajout d'images
 	add_theme_support( 'post-thumbnails' );
+	add_image_size('miniature', 50, 50);
 
 	// This theme uses wp_nav_menu() in one location.
 
