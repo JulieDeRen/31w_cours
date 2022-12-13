@@ -302,6 +302,28 @@ function my_register_sidebars() {
 			'after_title'   => '</h3>',
 		)
 	);
+	register_sidebar(
+		array(
+			'id'            => 'header-1',
+			'name'          => __( 'Sidebar header-1' ),
+			'description'   => __( 'Un premier sidebar dans l`entete.' ),
+			'before_widget' => '<div id="%1$s" class="widget %2$s">',
+			'after_widget'  => '</div>',
+			'before_title'  => '<h3 class="widget-title">',
+			'after_title'   => '</h3>',
+		)
+	);
+	register_sidebar(
+		array(
+			'id'            => 'header-2',
+			'name'          => __( 'Sidebar header-2' ),
+			'description'   => __( 'Un deuxième sidebar dans l`entete.' ),
+			'before_widget' => '<div id="%1$s" class="widget %2$s">',
+			'after_widget'  => '</div>',
+			'before_title'  => '<h3 class="widget-title">',
+			'after_title'   => '</h3>',
+		)
+	);
 
 
 }

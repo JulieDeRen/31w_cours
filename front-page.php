@@ -13,6 +13,7 @@
  */
 get_header();
 
+
 	$thumbnail = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'twentyseventeen-featured-image' );
 
 	// Calculate aspect ratio: h / w * 100%.
@@ -28,7 +29,8 @@ get_header();
 	<main class="site__main">
 		<!--<code>front-page.php</code>-->
 
-		<?php
+
+<?php
 
 		wp_nav_menu(array(
 			'menu'=> 'evenement',
@@ -37,6 +39,8 @@ get_header();
 		));
 		
 ?>
+
+
 	<!-- Voir fichier grille_accueil.scss -->
 	<section class="grille">
 

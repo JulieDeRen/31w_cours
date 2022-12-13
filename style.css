@@ -793,4 +793,34 @@ h1 {
 .bloc__permalien {
   text-decoration: none;
   color: black;
+}
+
+div.widget-rechercher {
+  display: flex;
+  flex-direction: row;
+}
+
+div.widget-rechercher img {
+  margin: 4em 2em;
+}
+
+#sidebar-header-1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 1.5rem;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+input.search-field,
+input.search-submit {
+  padding: 0.6em;
+}
+
+.site__branding {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-bottom: 1rem;
 }/*# sourceMappingURL=style.css.map */

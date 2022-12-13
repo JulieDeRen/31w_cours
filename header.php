@@ -46,6 +46,7 @@
 	<a class="skip-link screen-reader-text" href="#primary"><?php esc_html_e( 'Skip to content', 'igc31w' ); ?></a>
  
 	<header id="masthead" class="site__header">
+
 		<div class="site__branding">
 			<?php
 			the_custom_logo();
@@ -60,11 +61,7 @@
 			endif;
 			$igc31w_description = get_bloginfo( 'description', 'display' );
 
-
-			if ( $igc31w_description || is_customize_preview() ) :
-				?>
-				<p class="site__description"><?php echo $igc31w_description; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?></p>
-			<?php endif; ?>
+			?>
 		</div><!-- .site-branding -->
 		<?php
 
@@ -75,6 +72,8 @@
 						"container_class"=> "menu__primaire",
 					));
 		?>
+		<?php get_sidebar( 'header-1' );?>
+		<?php get_sidebar( 'header-2' ); ?>
 	</header><!-- #masthead -->
 	<aside class="site__menu">
 	<input type="checkbox" id="chkBurger" class="chkBurger">
@@ -89,7 +88,7 @@
 		))
 	?>
 	</aside>
-	<aside class="site__sidebar">
+	<aside class="site__sidebar__header">
 			<h6>Calendrier</h6>
 			<?php get_sidebar( 'aside-1' ); ?>
 			<?php get_sidebar( 'aside-2' ); ?>
