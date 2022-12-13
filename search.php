@@ -22,7 +22,11 @@ get_header();
 
 
             while ( have_posts() ) : the_post();
-            
+            $i=0; /*compteur */
+            $i++; ?>
+            <h3> Nous avons trouvé <?= $i ?> résultat(s) de recherche </h3>
+
+            <?php
             if ( have_posts() ) :
 			/* Start the Loop */
 				the_post(); ?>
@@ -45,3 +49,8 @@ get_header();
 	</main><!-- #main -->
 <?php
 get_footer();
+
+
+
+
+
