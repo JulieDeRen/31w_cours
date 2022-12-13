@@ -73,7 +73,6 @@
 					));
 		?>
 		<?php get_sidebar( 'header-1' );?>
-		<?php get_sidebar( 'header-2' ); ?>
 	</header><!-- #masthead -->
 	<aside class="site__menu">
 	<input type="checkbox" id="chkBurger" class="chkBurger">
