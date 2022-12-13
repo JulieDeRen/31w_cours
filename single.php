@@ -22,7 +22,7 @@ get_header();
 		if ( have_posts() ) :
 			/* Start the Loop */
 				the_post(); ?>
-			<?php the_post_thumbnail('medium'); ?>
+			<!-- the_post_thumbnail('medium'); -->
 			<h1><?= get_the_title(); ?></h1>
 			<p>L'événement aura lieu au :  <?php the_field('adresse') ?></p>
      		<p>La date et l'heure de l'énénement :  <?php the_field('date_et_heure_de_levenement') ?></p>
